@@ -1,5 +1,5 @@
 
-Here are all the definitions for the different NMEA0183 sentences, explained in detail by data fields
+Here are all the definitions for the different NMEA0183 sentences, explained in details by data fields
 
 - **GBS** NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/GBS%20NMEA%20sentence%20structure.txt)
 
@@ -20,8 +20,8 @@ Here are all the definitions for the different NMEA0183 sentences, explained in 
         The GPQ NMEA sentence is used for reporting the quality and status of the GNSS receiver, including satellite
         visibility, signal quality, fix status, and receiver health.
   
-- **GSA** NMEA sentence structure:
-- **GST** NMEA sentence structure:
-- **RMC** NMEA sentence structure:
-- **VTG** NMEA sentence structure:
-- **ZDA** NMEA sentence structure:
+- **GSA** NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/GSA%20NMEA%20sentence%20structure.txt)
+- **GST** NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/GST%20NMEA%20sentence%20structure.txt)
+- **RMC** NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/RMC%20NMEA%20sentence%20structure.txt)
+- **VTG** NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/VTG%20NMEA%20sentence%20structure.txt)
+- **ZDA** NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/ZDA%20NMEA%20sentence%20structure.txt)
