@@ -1,5 +1,5 @@
 
-Here are the definitions for all the different NMEA0183 phrases, explained in detail by data field
+Here are the definitions for all the different NMEA0183 sentences, explained in detail by data field
 
 - GBS NMEA sentence structure:
 - GGA NMEA sentence structure:
