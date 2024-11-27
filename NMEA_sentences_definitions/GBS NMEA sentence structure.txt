@@ -20,9 +20,6 @@ Message ID: $GPGBS
 	- Firmware supported: u-blox 6 receivers from version 6.00 up to version 7.03.
 	- Type : Output message
 
-Translated with DeepL.com (free version)
-
-
 Comments: 
 The errlat, errlon, and erralt fields display the standard deviation of the position calculation, using all satellites that pass the RAIM test.
 These fields are only displayed if the RAIM process has been successful (i.e. no or few patches have been applied). They are not displayed if 4 or fewer satellites are used for navigation calculation (as integrity cannot be determined autonomously by the receiver in this case).
