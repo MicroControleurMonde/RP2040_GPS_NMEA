@@ -1,9 +1,9 @@
-GGA: Provides fundamental GPS fix information, including position, time, and number of satellites used.
-Most accurate sentence for the coordinates
+##GGA: Provides fundamental GPS fix information, including position, time, and number of satellites used.
+##Most accurate sentence for the coordinates
 
-The GGA NMEA sentence structure is as follows:
+# The GGA NMEA sentence structure is as follows:
 
-$--GGA,hhmmss.ss,llll.lll,a,yyyyy.yyy,a,x,uu,v.v,w.w,M,x.x,M,,zzzz*hh<CR><LF>
+### $--GGA,hhmmss.ss,llll.lll,a,yyyyy.yyy,a,x,uu,v.v,w.w,M,x.x,M,,zzzz*hh<CR><LF>
 
 Corresponds to the standard GGA sentence structure, where each field has a specific meaning:
 
