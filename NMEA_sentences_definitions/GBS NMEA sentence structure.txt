@@ -1,0 +1,31 @@
+NMEA GBS sentence structure
+
+$GPGBS,hhmmss.ss,errlat,errlon,erralt,svid,prob,bias,stddev*cs<CR><LF>
+
+1 - $GPGBS : Message ID, GBS protocol header
+2 - hhmmss.ss: UTC time at the time of RAIM evaluation (format hhmmss.ss)
+3 - errlat: Estimated latitude error (in meters)
+4 - errlon: Estimated error in longitude (in meters)
+5 - erralt: Estimated altitude error (in meters)
+6 - svid: ID of satellite most likely to fail (if applicable)
+7 - prob: Probability of non-detection (if applicable, otherwise left blank)
+8 - bias: Estimated bias of the most likely failed satellite (in meters) (if applicable)
+9 - stddev: Standard deviation of estimated bias (in meters) (if applicable)
+10 - cs: Checksum in hexadecimal to verify message integrity
+11 - <CR><LF>: End-of-line characters (carriage return and line feed)
+
+Message ID: $GPGBS
+	- Description: Provides the results of the Receiver Autonomous Integrity Monitoring (RAIM) algorithm for GNSS satellite fault detection. 
+	The GBS sentence is used to determine satellite integrity and detect potential errors.
+	- Firmware supported: u-blox 6 receivers from version 6.00 up to version 7.03.
+	- Type : Output message
+
+Translated with DeepL.com (free version)
+
+
+Comments: 
+The errlat, errlon, and erralt fields display the standard deviation of the position calculation, using all satellites that pass the RAIM test.
+These fields are only displayed if the RAIM process has been successful (i.e. no or few patches have been applied). They are not displayed if 4 or fewer satellites are used for navigation calculation (as integrity cannot be determined autonomously by the receiver in this case).
+The prob, bias and stddev fields are only displayed if at least one satellite has failed the RAIM test. If more than one satellite has failed the RAIM test, only the information for the most unsuccessful satellite is provided in this message.
+
+Translated with DeepL.com (free version)
