@@ -13,7 +13,7 @@ Here are all the definitions for the different NMEA0183 sentences, explained in 
   
         The GLL NMEA sentence is used to transmit basic positioning information (latitude, longitude, UTC time)
         and the status of the GNSS fix.
-        It's a simple and lightweight.
+        It's simple and lightweight.
   
 - **GPQ**  NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/GPQ%20%20NMEA%20sentence%20structure.txt)
 
