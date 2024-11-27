@@ -45,3 +45,5 @@ Here are all the definitions for the different NMEA0183 sentences, explained in 
 
         The ZDA (Time and Date) NMEA sentence is used to provide accurate date and time information,
         including UTC time, the day, month, year, and the local time offset from UTC.
+### Reference:
+[Pdf](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/NMEA%20Reference%20Manual-Rev2.1-Dec07.pdf) - NMEA Reference Manual SiRF Technology, Inc. Revision 2.1, December 2007
