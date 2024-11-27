@@ -4,7 +4,7 @@ Set of micro-python tools to decode the different types of NMEA sentences provid
 ### **REMINDER**:
  **NMEA sentences are not vendor specific**, which means that these tools will work with any GPS chipset as long as it is properly connected to your MCU.
  
-- 1 Generic NMEA decoder (*used as debugger to visualize the different streams sent by the GPS chip*)
+- 1 Generic NMEA decoder (*used as debugger to visualize the different streams sent by the GPS chip*): [Generic decoder](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_%24GP.py)
 - 2 RMC Decoder
 - 3 GGA Decoder 
 - 4 GLL Decoder
