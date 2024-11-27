@@ -27,5 +27,3 @@ Comments:
 The errlat, errlon, and erralt fields display the standard deviation of the position calculation, using all satellites that pass the RAIM test.
 These fields are only displayed if the RAIM process has been successful (i.e. no or few patches have been applied). They are not displayed if 4 or fewer satellites are used for navigation calculation (as integrity cannot be determined autonomously by the receiver in this case).
 The prob, bias and stddev fields are only displayed if at least one satellite has failed the RAIM test. If more than one satellite has failed the RAIM test, only the information for the most unsuccessful satellite is provided in this message.
-
-Translated with DeepL.com (free version)
