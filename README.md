@@ -12,6 +12,8 @@ These decoders interpret the sentences to extract the values according to the NM
 
 [NMEA 0183](https://en.wikipedia.org/wiki/NMEA_0183)
 
+# Sentences structures
+
 The detailed structure of each NMEA sentences is detailed in this section: [Structures](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/definitions.md)
 
 ## UNDER CONSTUCTION
