@@ -1,0 +1,21 @@
+
+The VTG NMEA sentence structure is as follows:
+
+$--VTG,x.x,T,y.y,M,u.u,N,v.v,K,m*hh<CR><LF>
+
+Here's a breakdown of each field:
+
+1) $GPVTG or $GNVTG: 	The message ID
+2) x.x:		Track Made Good (True): The track made good in degrees (0–359.9), relative to true north.
+3) T:		Fixed text "T" - This indicates that the track made good is relative to true north.
+4) y.y:		Magnetic Track - This field represents the track made good in degrees relative to magnetic north.
+5) M:		Reference - This indicates that the previous value is relative to magnetic north.
+6) u.u: 	This field indicates the speed over ground in knots, which can have 0 to 3 decimal places.
+7) N:		Units - Fixed text "N" indicates that speed over ground is in knots
+8) v.v:		Speed over ground in kilometers/hour (0–3 decimal places)
+9) K:		Units - Fixed text "K" indicates that the speed over ground is in kilometers per hour.
+10) m:		Fixed text for Mode "A"=Autonomous, "D"=DGPS Differential, "E"=Estimated (dead reckoning), "N"= not valid
+11) *hh:	Checksum data, always begins with *
+
+Field marked as '10)' apply only to NMEA version 2.3 (and later) in this NMEA message description.
+

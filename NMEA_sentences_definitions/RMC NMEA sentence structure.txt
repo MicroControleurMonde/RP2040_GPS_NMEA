@@ -1,0 +1,25 @@
+RMC - Specific minimum recommended GNSS data
+Data = time, date, position, heading and speed provided by a GNSS navigation receiver.
+
+Format:
+$--RMC,hhmmss.sss,x,llll.lll,a,yyyyy.yyy,a,x.x,u.u,xxxxxx,x.x,m,v*hh<CR><LF>
+
+1- $:           Sign indicating the beginning of a NMEA sentence.
+2- GN:          Speaker identifier, where ‘GN’ stands for Global Navigation Satellite System (GNSS) and ‘GP’ is the old version.
+3- hhmmss.sss:  UTC time, UTC time in hhmmss.sss format (000000.000 ~ 235959.999).
+4- x:           Status, Statut ‘V’ = (Void) Navigation receiver warning, ‘A’ = Valid data.
+5- llll.lll:    Latitude, Latitude in dddmm.mmmm format. Leading zeros are inserted.
+6- a:           N/S indicator, ‘N’ = North; ‘S’ = South.
+7- yyyyy.yyy:   Longitude, Longitude in dddmm.mmmm format. Leading zeros are inserted.
+8- a:           E/W indicator, ‘E’ = East; ‘W’ = West.
+9- x.x:         Ground speed, Ground speed in knots (000.0 ~ 999.9).
+10- u.u:        Course over ground, Heading or direction in degrees from true North (000.0 ~ 359.9).
+11- xxxxxx:       UTC date, UTC date of the fixed position, format ddmmyy.
+12 -x.x:        Magnetic variation, degrees, Note that this field is the actual magnetic variation and will always be positive. 
+                The direction of the magnetic variation is always positive. (0.0)
+13- m:          Direction of magnetic variation E/W. Eastward variation (E) subtracts from true heading, 
+                westward variation (W) adds to true heading.
+14- v:          Mode indicator, Mode indicator: ‘N’ = invalid data, ‘A’ = autonomous mode, ‘D’ = differential mode, 
+                ‘E’ = dead reckoning mode, ‘M’= manual input
+15- hh:         checksum
+16- <CR> <LF>:  End of message

@@ -1,0 +1,16 @@
+GLL – Geographic Position – Latitude/Longitude
+Latitude and longitude of vessel position, time of position fix and status.
+
+Format:
+$--GLL,llll.lll,a,yyyyy.yyy,b,hhmmss.sss,A,a*hh<CR><LF>
+
+1 - Message ID:		$GPGLL - GLL protocol header
+2 - llll.lll: 		Latitude - Latitude in ddmm.mmmm format. Leading zeros are inserted.
+3 - a:			    Direction indicator to determine the latitude ('N' for the North, 'S' for the South)
+4 - yyyyy.yyy:		Longitude - Longitude in dddmm.mmmm format. Leading zeros are inserted.
+5 - b:			    Direction indicator for longitude ('E' for East, 'W' for West)
+6 - hhmmss.sssP		UTC Time - UTC of position in hhmmss.sss format, (000000.000 ~ 235959.999)
+7 - A:			    Status - 'A'= data valid, 'V'= Data not valid
+8 - a:			    Mode - Optional, indicates the positioning source, A=Autonomous, D=DGPS, E=DR (Only present in NMEA v3.00)
+9 - *hh:		    Checksum
+10 - <CR> <LF>:		End of message termination

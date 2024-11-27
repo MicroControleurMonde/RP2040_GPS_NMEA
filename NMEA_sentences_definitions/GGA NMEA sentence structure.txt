@@ -1,0 +1,41 @@
+GGA: Provides fundamental GPS fix information, including position, time, and number of satellites used.
+Most accurate sentence for the coordinates
+
+The GGA NMEA sentence structure is as follows:
+
+$--GGA,hhmmss.ss,llll.lll,a,yyyyy.yyy,a,x,uu,v.v,w.w,M,x.x,M,,zzzz*hh<CR><LF>
+
+Corresponds to the standard GGA sentence structure, where each field has a specific meaning:
+
+1. Message ID: `$--GGA`- Indicates the type of message (Global Positioning System Fix Data). 
+	The "--" prefix is replaced by specific identifiers, such as GP for GPS, GL for GLONASS, BD for BeiDou, etc
+2. UTC Time: `hhmmss.ss` - Time at which the position was fixed (hours, minutes, seconds format).
+3. Latitude: `llll.lll` - Latitude in degrees and minutes (format ddmm.mmmm).
+4. N/S Indicator: `a` - Indicates whether the latitude is North (N) or South (S).
+5. Longitude: `yyyy.yyy` - Longitude in degrees and minutes (format dddmm.mmmm).
+6. E/W Indicator: `a` - Indicates whether the longitude is east (E) or west (W).
+7. Quality: `x`- Indicates the quality of the GPS signal (0 to 8).
+8. Number of Satellites in use: `uu` - Number of satellites used for fix.
+9. Horizontal Dilution of Precision (HDOP): `v.v` - Horizontal dilution of precision indicator.
+10. Altitude: `w.w` - Altitude above sea level.
+11. Units of Altitude: `M` - Unit of measure for altitude (M for metres).
+12. Geoid Separation: `x.x` - Separation of the geoid.
+13. Units of Geoid Separation: `M` - Unit of measure for geoid separation (M for metres).
+14. Age of Differential GPS Data: - Time in seconds since last DGPS update. This field may be empty.
+15. DGPS Station ID: `zzzz` - Identification number of the DGPS station. This field may be empty.
+16. Checksum: `*hh` - Check data to verify sentence integrity.
+
+Quality: 
+0: No position information (no fix). 
+1: GPS fix (using GPS signals only). 
+2: Differential GPS fix (DGPS, GPS signal correction). 
+3: GPS fix with floating position (using GPS signals with extended corrections). 
+4: GPS fix with floating position with reference station corrections.
+5: Fix GPS with real-time corrections via a local system. 
+6: Fix GPS with real-time corrections via a global reference station. 
+7: Fix GPS with extended corrections and real-time corrections. 
+8: Fix with local and real-time corrections, combining several navigation systems (e.g. GPS + GLONASS).
+
+The best quality is represented by the value 8, as it indicates that the GPS receiver uses an optimal combination of local and real-time correction data, as well as several navigation systems (such as GPS and GLONASS). 
+
+In most cases, a fix with a quality of 1 or 2 is generally sufficient for routine applications, while quality 8 is rarer and represents the optimum conditions for obtaining the best possible accuracy.

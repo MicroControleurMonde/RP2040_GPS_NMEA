@@ -1,0 +1,22 @@
+GSA GPS receiver operating mode, satellites used in the position solution, and DOP values
+
+Format:
+$--GSA,a,x,xx,xx,xx,xx,xx,xx,xx,xx,xx,xx,xx,xx,u.u,v.v,z.z*hh<CR><LF>
+
+1. $--GSA:	Message ID - GSA protocol header. The "--" prefix is replaced by specific identifiers, such as GP for GPS, GL for GLONASS, BD for BeiDou, etc.	
+2. a:		Mode - Mode 'M'= Manual, forced to operate in 2D or 3D mode, 'A'= Automatic, allowed to automatically switch 2D/3D.
+3. x:		Mode - Fix type 1 = Fix not available  (no position calculated) , 2 = 2D Fix (position calculated with less than 4 satellites), 
+		3 = 3D Fix (position calculated with 4 or more satellites)
+4. xx’s:	Satellite ID - GPS satellite IDs range from 01 to 32; 
+		SBAS (Satellite Boosting System) satellites have PRNs (pseudo-random noise) ranging from 120 to 158. 
+		Here, the given range (33-64) corresponds to PRN minus 87.; 
+		For GLONASS, IDs range from 65 to 96 (adding 64 to slot numbers); 
+		QZSS (Japanese Quasi-Zenith Satellite System) satellites are identified by IDs 193 to 197; 
+		BeiDou satellites use the range 01 to 37, but in some configurations they may have BD prefixes to differentiate them; 
+		GPS and Beidou satellites are differentiated by the GP and BD prefix; 				
+		Maximally 12 satellites are included in each GSA sentence.
+5. u.u:		PDOP - Position dilution of precision (00.0 to 99.9).
+6. v.v:		HDOP - Horizontal dilution of precision (00.0 to 99.9).
+7. z.z:		VDOP - Vertical dilution of precision (00.0 to 99.9).
+8. hh: 		checksum.
+9. <CR><LF>: 	End of message.

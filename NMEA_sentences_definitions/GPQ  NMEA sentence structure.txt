@@ -1,0 +1,10 @@
+NMEA GPQ Sentence Specification
+
+Message Structure:
+
+$xxGPQ,sid*cs<CR><LF>
+
+1. $xxGPQ:      This is the message ID, where xx is the talker identifier.
+2. sid:         This is the Sentence Identifier. It specifies which NMEA sentence you want to poll (e.g., RMC for Recommended Minimum Specific GNSS Data).
+3. cs:          This is the checksum, which is a hexadecimal value used to ensure the message integrity.
+4. <CR><LF>:    Carriage Return and Line Feed characters mark the end of the message.

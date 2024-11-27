@@ -1,0 +1,17 @@
+NMEA Sentence GST Specification
+
+Message Structure
+
+$GPGST,hhmmss.ss,range_rms,std_major,std_minor,hdg,std_lat,std_long,std_alt*cs<CR><LF>
+
+1 - $GPGST: 	Format: string, description: Message ID and protocol header for GST
+2 - hhmmss.ss: 	Format: hhmmss.sss, Unit: UTC Time, description: Time of the associated position fix
+3 - range_rms:	Format: numeric, Unit: meters, Description: RMS value of the standard deviation of the pseudo ranges
+4 - std_major:	Format: numeric (empty if not supported), Unit: meters, Description: Standard deviation of the semi-major axis of the error ellipse (not supported, typically empty)
+5 - std_minor:	Format: numeric (empty if not supported), Unit: meters, Description: Standard deviation of the semi-minor axis of the error ellipse (not supported, typically empty)
+6 - hdg:	Format: numeric (empty if not supported), Unit: degrees, Description: Orientation of the semi-major axis of the error ellipse (not supported, typically empty)
+7 - std_lat:	Format: numeric, Unit: meters, Description: Standard deviation of latitude, representing the error in latitude
+8 - std_long:	Format: numeric, Unit: meters, Description: Standard deviation of longitude, representing the error in longitude
+9 - std_alt:	Format: numeric, Unit: meters, Description: Standard deviation of altitude, representing the error in altitude
+10 - cs:	Format: hexadecimal, Checksum for error detection
+11 - <CR><LF>
