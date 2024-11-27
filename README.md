@@ -1,5 +1,5 @@
 # RP2040_GPS_NMEA
-[NMEA](https://www.nmea.org/favicon.ico)
+![Pic](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/nmea-logo-blue.jpg)
 Set of micro-python tools to decode the different types of NMEA sentences provided by a GPS chip.
 
 ### **REMINDER**:
