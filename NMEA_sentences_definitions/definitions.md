@@ -6,6 +6,9 @@ Here are the definitions for all the different NMEA0183 sentences, explained in 
       The GBS sentence is primarily used to ensure the integrity of GNSS signals
   
 - GGA NMEA sentence structure:
+
+        The GGA sentence provides fundamental positioning data from a GNSS receiver
+
 - GLL – Geographic Position (Lat_Long):
 - GPQ  NMEA sentence structure:
 - GSA NMEA sentence structure:
