@@ -8,7 +8,7 @@ Set of micro-python tools to decode the different types of NMEA sentences provid
 5. GSA Decoder
 6. GSV Decoder
 
-These decoder interpret the sentences to extract the values according to the NMEA 0183 standard **without using any external library / module !**
+These decoders interpret the sentences to extract the values according to the NMEA 0183 standard **without using any external library / module !**
 
 [NMEA Standard](https://en.wikipedia.org/wiki/NMEA_0183)
 
