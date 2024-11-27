@@ -38,5 +38,10 @@ Here are all the definitions for the different NMEA0183 sentences, explained in 
  
 - **VTG** NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/VTG%20NMEA%20sentence%20structure.txt)
 
+        The VTG (Course and Speed Over Ground) NMEA sentence provides vital navigation information including
+        the course over ground and speed over ground.
   
 - **ZDA** NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/ZDA%20NMEA%20sentence%20structure.txt)
+
+        The ZDA (Time and Date) NMEA sentence is used to provide accurate date and time information,
+  including UTC time, the day, month, year, and the local time offset from UTC.
