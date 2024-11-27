@@ -3,7 +3,7 @@ Here are all the definitions for the different NMEA0183 sentences, explained in 
 
 - **GBS** NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/GBS%20NMEA%20sentence%20structure.txt)
 
-      The GBS sentence is primarily used to ensure the integrity of GNSS signals
+        The GBS sentence is primarily used to ensure the integrity of GNSS signals
   
 - **GGA** NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/GGA%20NMEA%20sentence%20structure.txt)
 
@@ -15,7 +15,11 @@ Here are all the definitions for the different NMEA0183 sentences, explained in 
         and the status of the GNSS fix.
         It's a simple and lightweight.
   
-- **GPQ**  NMEA sentence structure:
+- **GPQ**  NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/GPQ%20%20NMEA%20sentence%20structure.txt)
+
+        The GPQ NMEA sentence is used for reporting the quality and status of the GNSS receiver, including satellite
+        visibility, signal quality, fix status, and receiver health.
+  
 - **GSA** NMEA sentence structure:
 - **GST** NMEA sentence structure:
 - **RMC** NMEA sentence structure:
