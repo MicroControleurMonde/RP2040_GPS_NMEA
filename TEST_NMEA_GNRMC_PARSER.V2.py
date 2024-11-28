@@ -1,4 +1,4 @@
-# TEST_NMEA_GNRMC.py
+# TEST_NMEA_GNRMC.V2.py
 # Updated on 22 Aug 2024
 # MicroPython code for Raspberry Pi Pico to retrieve and display only $GNRMC NMEA sentences with checksum validation
 # UTC Time / UTC Date/ Status / Mode / Latitude/Longitude / Ground Speed (Km/h)
