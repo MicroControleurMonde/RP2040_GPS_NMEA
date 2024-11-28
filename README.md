@@ -32,6 +32,7 @@ In this section, you'll find a few videos on how the tools are working and what 
 # Sentences structures
 
 The detailed structure of each NMEA sentences is detailed in this section: [Structures](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/definitions.md)
+(Files are in standard ASCII Text).
 
 Each byte received is interpreted according to the NMEA specifications.
 
