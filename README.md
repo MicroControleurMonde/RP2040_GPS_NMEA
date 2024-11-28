@@ -52,6 +52,8 @@ You should adjust these settings if your setup uses different pins.
 - 6 GSV Decoder - [GSV Decoder Source](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_GSV.V1.py)
 - 7 VFG Decoder - [VFG Decoder Source](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_VTG.V1.py)
 
+  ***Note*** The 7 given decoders are the most current sentences emitted by GPS chips. The GPQ, TPS and ZDA NMEA sentences are more rarely observable and are not the ones that are the most useful in terms of geolocation.
+
 These decoders interpret the sentences to extract the values according to the NMEA 0183 standard **without using any external library / module !**
 
 # 3.Decoding Demos (Videos)
