@@ -8,7 +8,7 @@
 ### **REMINDER**:
  **NMEA sentences are not vendor specific**, which means that these tools will work with any GPS chipset as long as it is properly connected to your MCU.
  
-# NEMA Decoding Tools
+# 1. NEMA Decoding Tools
  
 - 1 Generic NMEA decoder (*used as debugger to visualize the different streams*) - [Generic Decoder Source](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_%24GP.py)
 - 2 RMC Decoder - [RMC Decoder Source](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_GNRMC_PARSER.V2.py)
@@ -22,14 +22,14 @@ These decoders interpret the sentences to extract the values according to the NM
 
 All of them are using **`UART0`**, **`TX=GPIO0`**, **`RX=GPIO1`** as default. So remember to change the settings according to your setup !
 
-# Decoding Demos (Videos)
+# 2. Decoding Demos (Videos)
 
 In this section, you'll find a few videos on how the tools are working and what they are doing exactly.
 
 [Video Demos](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/videos/demo_video.md)
 
 
-# Sentences structures
+# 3. Sentences structures
 
 The detailed structure of each NMEA sentences is detailed in this section: [Structures](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/definitions.md)
 (Files are in standard ASCII Text).
@@ -37,4 +37,6 @@ The detailed structure of each NMEA sentences is detailed in this section: [Stru
 Each byte received is interpreted according to the NMEA specifications.
 
 ## UNDER CONSTUCTION
-![Pic](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/1411798446.jpg)
+I will add other elements soon. 
+
+Stay tuned.
