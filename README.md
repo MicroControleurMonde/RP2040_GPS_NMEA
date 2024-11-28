@@ -13,7 +13,7 @@
 - 3 GGA Decoder - [GCA Decoder Source](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_GSA.V1.py)
 - 4 GLL Decoder -
 - 5 GSA Decoder - 
-- 6 GSV Decoder -
+- 6 GSV Decoder - [GSV Decoder Source](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_GSV.V1.py)
 
 These decoders interpret the sentences to extract the values according to the NMEA 0183 standard **without using any external library / module !**
 
