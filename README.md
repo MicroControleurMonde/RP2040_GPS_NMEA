@@ -3,7 +3,7 @@
 
 [NMEA 0183](https://en.wikipedia.org/wiki/NMEA_0183) (Wikipedia)
 
-### Set of micro-python tools to decode the different types of NMEA sentences provided by a GPS chip.
+<u>Set of micro-python tools to decode the different types of NMEA sentences provided by a GPS chip.</u>
 
 ### **REMINDER**:
  **NMEA sentences are not vendor specific**, which means that these tools will work with any GPS chipset as long as it is properly connected to your MCU.
