@@ -1,5 +1,5 @@
 
-Here are all the definitions for the different NMEA0183 sentences, explained in details by data fields
+Here are all the definitions of the different NMEA 0183 sentences, explained in detail by data fields. Follow the links to get the complete (up-to-date v4, 2007) definitions of each sentence.
 
 - **GBS** NMEA sentence structure: [link](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/GBS%20NMEA%20sentence%20structure.txt)
 
