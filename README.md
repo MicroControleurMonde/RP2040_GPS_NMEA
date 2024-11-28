@@ -26,6 +26,7 @@ All of them are using **`UART0`**, **`TX=GPIO0`**, **`RX=GPIO1`** as default. So
 
 In this section, you'll find a few videos on how the tools are working and what they are doing exactly.
 
+[Video Demos](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/videos/demo_video.md)
 
 
 # Sentences structures
