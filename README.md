@@ -14,10 +14,11 @@
 - 4 GLL Decoder - [GLL Decoder Source](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_GLL.V1.py)
 - 5 GSA Decoder - [GSA Decoder Source](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_GSA.V1.py)
 - 6 GSV Decoder - [GSV Decoder Source](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_GSV.V1.py)
+- 7 VFG Decoder - [VFG Decoder Source](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_VTG.V1.py)
 
 These decoders interpret the sentences to extract the values according to the NMEA 0183 standard **without using any external library / module !**
 
-All of them are using **UART0**, **TX=GPIO0**, **RX=GPIO1** as default. So remember to change the settings according to your setup !
+All of them are using **`UART0`**, **`TX=GPIO0`**, **`RX=GPIO1`** as default. So remember to change the settings according to your setup !
 
 [NMEA 0183](https://en.wikipedia.org/wiki/NMEA_0183)
 
