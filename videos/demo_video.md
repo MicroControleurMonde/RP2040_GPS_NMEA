@@ -7,7 +7,7 @@ The examples provided show the codes operating in "*normal*" mode (the GPS chip 
 
 In some cases, your GPS chip is correctly connected, it emits abundant NMEA streams and yet... when decoding, nothing is displayed! 
 
-This happens when the GPS chip did not have enough time after start-up to accumulate satellite data. It also happens when the chip loses reception of satellite signals.
+This happens when ***`the GPS chip did not have enough time after start-up to accumulate satellite data`***. It also happens when ***`the chip loses reception of satellite signals`***.
 The following videos show you what happens at data level and how it translates into each NMEA sentence.
 
 - **NMEA empty streams**: [video](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/videos/NMEA%20Empty%20sentences.mp4)
