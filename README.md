@@ -6,18 +6,18 @@
 #### Abstract: Set of micro-python tools to decode the different types of NMEA sentences provided by a GPS chip.
 
 ## Breakdown of Sections
-##### Project Description
-##### 1.Requirements
-##### 2.NEMA Decoding Tools
-##### 3.Decoding Demos (Videos)
-##### 4.Sentences structures
-##### 5.Disclaimer
+##### 0. Project Description
+##### 1. Requirements
+##### 2. NEMA Decoding Tools
+##### 3. Decoding Demos (Videos)
+##### 4. Sentences structures
+##### 5. Disclaimer
 
 # Project Description
 
-This project provides a set of MicroPython tools for decoding various types of NMEA sentences typically received from GPS modules. NMEA 0183 is a standard for communication between GPS receivers and devices. 
-The provided decoders interpret these NMEA sentences without relying on any external libraries, making it easy to use with any compatible GPS chipset. The project is designed to work with the RP2040 (or similar)
-microcontrollers, such as the Raspberry Pi Pico, and utilizes UART communication for GPS data input.
+This project provides a set of MicroPython tools for decoding various types of NMEA sentences typically received from GPS modules. 
+
+NMEA 0183 is an international standard for communication between GPS receivers and devices. The provided decoders interpret these NMEA sentences without relying on any external libraries, making it easy to use with any compatible GPS chipset. The project is designed to work with the RP2040 (or similar) microcontrollers, such as the Raspberry Pi Pico, and utilizes UART communication for GPS data input.
 
 ### **REMINDER**:  **NMEA sentences are not vendor specific !**
 
@@ -34,8 +34,8 @@ microcontrollers, such as the Raspberry Pi Pico, and utilizes UART communication
 #### Pins Used:
 
 The default UART settings are:
-- UART 0
-- TX = GPIO0 / RX = GPIO1
+- `UART 0`
+- `TX = GPIO0` / `RX = GPIO1`
   
 You should adjust these settings if your setup uses different pins.
 
@@ -53,8 +53,6 @@ You should adjust these settings if your setup uses different pins.
 - 7 VFG Decoder - [VFG Decoder Source](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/TEST_NMEA_VTG.V1.py)
 
 These decoders interpret the sentences to extract the values according to the NMEA 0183 standard **without using any external library / module !**
-
-All of them are using **`UART0`**, **`TX=GPIO0`**, **`RX=GPIO1`** as default. So remember to change the settings according to your setup !
 
 # 3.Decoding Demos (Videos)
 
