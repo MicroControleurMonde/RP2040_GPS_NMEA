@@ -1,6 +1,8 @@
 # RP2040_GPS_NMEA
 ![Pic](https://github.com/MicroControleurMonde/RP2040_GPS_NMEA/blob/main/NMEA_sentences_definitions/nmea-logo-blue.jpg)
 
+[NMEA 0183](https://en.wikipedia.org/wiki/NMEA_0183) (Wikipedia)
+
 ### Set of micro-python tools to decode the different types of NMEA sentences provided by a GPS chip.
 
 ### **REMINDER**:
@@ -20,7 +22,7 @@ These decoders interpret the sentences to extract the values according to the NM
 
 All of them are using **`UART0`**, **`TX=GPIO0`**, **`RX=GPIO1`** as default. So remember to change the settings according to your setup !
 
-[NMEA 0183](https://en.wikipedia.org/wiki/NMEA_0183)
+
 
 # Sentences structures
 
