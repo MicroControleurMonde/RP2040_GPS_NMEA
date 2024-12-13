@@ -24,7 +24,7 @@ NMEA 0183 is an international standard for communication between GPS receivers a
 # 1.Requirements
 #### Hardware:
 - Any GPS module compatible NMEA 0183 (e.g., NEO-6M, NEO-7M, u-blox SAM-M8Q, Beitan GPS modules,  etc.).
-- A microcontroller with UART capability (RP2040, ESP8266, ESP32 or similar).
+- A microcontroller with UART capability (RP2040, ESP8266, ESP32, Teensy, PyBoard or similar).
 - Proper wiring between the GPS module and the microcontroller.
 
 #### Software:
